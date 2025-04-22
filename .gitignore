@@ -1,0 +1,35 @@
+# macOS
+.DS_Store
+
+# Tuist
+Tuist/Dependencies
+Tuist/Setup/Build
+Tuist/Setup/.build
+Tuist/Graph
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+*.xcuserdatad/
+DerivedData/
+build/
+
+# SwiftPM
+.build/
+.swiftpm/
+Package.resolved
+
+# Logs
+*.log
+
+# Xcode Preview
+*.preview-thumbnails
+
+# Editor settings
+.idea/
+.vscode/
+
+# Misc
+*.moved-aside
+*.swp
