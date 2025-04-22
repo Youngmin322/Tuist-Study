@@ -7,7 +7,7 @@ let project = Project(
        name: "SnapKitDemo",
        destinations: .iOS,
        product: .app,
-       bundleId: "io.tuist.SnapKitDemo",
+       bundleId: "kr.co.youngmin.SnapKitDemo",
        infoPlist: .extendingDefault(
          with: [
            "UILaunchScreen": [
@@ -26,7 +26,7 @@ let project = Project(
        name: "SnapKitDemoTests",
        destinations: .iOS,
        product: .unitTests,
-       bundleId: "io.tuist.SnapKitDemoTests",
+       bundleId: "kr.co.youngmin.SnapKitDemoTests",
        infoPlist: .default,
        sources: ["SnapKitDemo/Tests/**"],
        resources: [],
