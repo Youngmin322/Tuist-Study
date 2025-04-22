@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
+    
     private let redView = UIView()
     private let blueView = UIView()
     private let greenView = UIView()
