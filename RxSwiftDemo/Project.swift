@@ -1,13 +1,13 @@
 import ProjectDescription
 
 let project = Project(
-    name: "HelloTuist",
+    name: "RxSwiftDemo",
     targets: [
         .target(
-            name: "HelloTuist",
+            name: "RxSwiftDemo",
             destinations: .iOS,
             product: .app,
-            bundleId: "io.tuist.HelloTuist",
+            bundleId: "io.tuist.RxSwiftDemo",
             infoPlist: .extendingDefault(
                 with: [
                     "UILaunchScreen": [
@@ -16,19 +16,21 @@ let project = Project(
                     ],
                 ]
             ),
-            sources: ["HelloTuist/Sources/**"],
-            resources: ["HelloTuist/Resources/**"],
-            dependencies: []
+            sources: ["RxSwiftDemo/Sources/**"],
+            resources: ["RxSwiftDemo/Resources/**"],
+            dependencies: [
+                .external(name: "RxSwift")
+            ]
         ),
         .target(
-            name: "HelloTuistTests",
+            name: "RxSwiftDemoTests",
             destinations: .iOS,
             product: .unitTests,
-            bundleId: "io.tuist.HelloTuistTests",
+            bundleId: "io.tuist.RxSwiftDemoTests",
             infoPlist: .default,
-            sources: ["HelloTuist/Tests/**"],
+            sources: ["RxSwiftDemo/Tests/**"],
             resources: [],
-            dependencies: [.target(name: "HelloTuist")]
+            dependencies: [.target(name: "RxSwiftDemo")]
         ),
     ]
 )
