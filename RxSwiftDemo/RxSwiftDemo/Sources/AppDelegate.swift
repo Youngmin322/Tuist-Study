@@ -15,7 +15,7 @@ import UIKit
                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
      window = UIWindow(frame: UIScreen.main.bounds)
      let viewController = ViewController()
-     window?.rootViewController = UINavigationController(rootViewController: viewController)
+     window?.rootViewController = UINavigationController(rootViewController: ParentViewController())
      window?.makeKeyAndVisible()
      return true
    }
