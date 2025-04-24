@@ -10,8 +10,8 @@ import ComposableArchitecture
 @Reducer
 struct CounterFeature {
     // MARK: - State
-    @ObservableState // SwiftUI 뷰에서 관찰 가능하도록 설정
-    struct State: Equatable { // 테스트 용이성을 위해 Equatable 채택
+    @ObservableState
+    struct State: Equatable {
         var count = 0
     }
     
@@ -21,7 +21,7 @@ struct CounterFeature {
         case decrementButtonTapped
     }
     
-    // MARK: - Reducer Body
+    // MARK: - Reducer
     var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
@@ -36,3 +36,4 @@ struct CounterFeature {
             }
         }
     }
+}

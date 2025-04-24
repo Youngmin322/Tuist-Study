@@ -1,3 +1,10 @@
+//
+//  TCADemoApp.swift
+//  TCADemo
+//
+//  Created by 조영민 on 4/24/25.
+//
+
 import ComposableArchitecture
 import SwiftUI
 
@@ -5,12 +12,7 @@ import SwiftUI
 struct TCADemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(
-                store: Store(initialState: CounterFeature.State()) {
-                    CounterFeature()
-                        .dependency(\.numberFact, .liveValue)
-                }
-            )
+            ContentView()
         }
     }
 }
