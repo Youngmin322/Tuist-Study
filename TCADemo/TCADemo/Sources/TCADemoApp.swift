@@ -16,7 +16,7 @@ struct TCADemoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView(store: TCADemoApp.store)
+            CounterView(store: TCADemoApp.store)
         }
     }
 }
